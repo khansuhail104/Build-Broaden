@@ -17,13 +17,13 @@ body {
 }
 
 ::selection {
-	background: #ff6a00;
+	background: #013366;
 	color: #fff;
 }
 
 a,
 a:hover {
-	color: #ff6a00;
+	color: #013366;
 	text-decoration: none;
 }
 
@@ -32,7 +32,7 @@ a:hover {
 }
 
 .text-main {
-	color: #ff6a00;
+	color: #013366;
 }
 
 .btn {
@@ -47,16 +47,16 @@ button:focus {
 }
 
 .btn-main {
-	background-color: #fc6a05;
-	background: linear-gradient(to right, #ff7515 50%, #fc6a05 50%) repeat scroll right bottom/200% 100% transparent;
-	border-color: #fc6a05;
+	background-color: #013366;
+	background: linear-gradient(to right, #013c78 50%, #013366 50%) repeat scroll right bottom/200% 100% transparent;
+	border-color: #013366;
 	color: #fff;
 	transition: background 350ms ease-in-out;
 }
 
 .btn-main:focus {
-	background-color: #fc6a05;
-	border-color: #fc6a05;
+	background-color: #013366;
+	border-color: #013366;
 	color: #fff;
 }
 
@@ -69,23 +69,23 @@ button:focus {
 
 .btn-main:active,
 .btn-main:visited {
-	background-color: #fc6a05;
-	border-color: #fc6a05;
+	background-color: #013366;
+	border-color: #013366;
 	color: #fff;
 }
 
 .btn-main-outline {
 	background-color: transparent;
-	background: linear-gradient(to right, #fc6a05 50%, transparent 50%) repeat scroll right bottom/200% 100% transparent;
-	border-color: #fc6a05;
-	color: #fc6a05;
+	background: linear-gradient(to right, #013366 50%, transparent 50%) repeat scroll right bottom/200% 100% transparent;
+	border-color: #013366;
+	color: #013366;
 	transition: background 350ms ease-in-out;
 }
 
 .btn-main-outline:hover {
-	background-color: #fc6a05;
+	background-color: #013366;
 	background-position: left bottom;
-	border-color: #fc6a05;
+	border-color: #013366;
 	color: #fff;
 }
 
@@ -94,7 +94,7 @@ button:focus {
 }
 
 .pre-title {
-	color: #fc6a05;
+	color: #013366;
 }
 
 .section-title {
@@ -127,17 +127,17 @@ button:focus {
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-	color: #fc6a05;
+	color: #013366;
 }
 
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .show>.nav-link {
-	color: #fc6a05;
+	color: #013366;
 }
 
 .dropdown-item:focus,
 .dropdown-item:hover {
-	background-color: #fc6a05;
+	background-color: #013366;
 	color: #fff;
 }
 
@@ -245,7 +245,7 @@ button:focus {
 }
 
 .img-cover:after {
-	background: #ff6a00;
+	background: #013366;
 	border-radius: 5px;
 	bottom: -15px;
 }
@@ -323,7 +323,7 @@ button:focus {
 }
 
 .pricing-table-main .pricing-table-tag {
-	background: #ff6a00;
+	background: #013366;
 	border-left: 3px solid #eae0da;
 	border-bottom: 3px solid #eae0da;
 	border-radius: 0 4px 0 12px;
@@ -396,7 +396,7 @@ button:focus {
 }
 
 .testimonials .swiper-pagination-bullet-active {
-	background: #ff6a00 !important;
+	background: #013366 !important;
 }
 
 .testimonial-box {
