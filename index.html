@@ -669,26 +669,37 @@
                <!-- Footer Contact Form Start -->
                <div class="col-12 col-lg-6">
                   <div class="content-text mt-5 mt-lg-0 ps-0 ps-lg-5">
+                     <span class="pre-title small fw-bold text-uppercase">Contact Us</span>
                      <h2 class="section-title">Let's Grow Your Business Together</h2>
+                     <style type="text/css">
+                        input { 
+                           margin-bottom: 10px;
+                        }
+                        input::placeholder {
+                            font-size: 16px;
+                        }
+                        .formcontainer {
+                          border-radius: 5px;
+                          background-color: #f2f2f2;
+                          display: flex;
+                          flex-direction: column;
+                          padding: 20px;
+                        }
+                     </style>
                      <div class="fs-main">
-                        <form  id="subscribe-form" action="https://buildandbroaden.us11.list-manage.com/subscribe/post-json?u=14ad9477588563587fd3933e5&amp;id=b910287aac&amp;f_id=005195e0f0" method="post" method="get">
-                           <div>
-                          <input type="text" id="mce-FNAME" name="FNAME" placeholder="First Name*" required>
-                          <input type="text" id="mce-LNAME" name="LNAME" placeholder="Last Name*" required><br>
-                          </div>
-                          <input type="email" id="mce-EMAIL" name="EMAIL" placeholder="Email*" required><br>
-                          <input type="text" id="mce-MESSAGE" name="MESSAGE" placeholder="Message*" required><br><br>
-                          <div>
+                        <form class="formcontainer" id="subscribe-form" action="https://buildandbroaden.us11.list-manage.com/subscribe/post-json?u=14ad9477588563587fd3933e5&amp;id=b910287aac&amp;f_id=005195e0f0" method="get">
+                           <input type="text" id="mce-FNAME" name="FNAME" placeholder=" First Name*" required>
+                          <input type="text" id="mce-LNAME" name="LNAME" placeholder=" Last Name*" required>
+                          <input class="formcolumn" type="email" id="mce-EMAIL" name="EMAIL" placeholder=" Email*" required>
+                          <input type="text" id="mce-MESSAGE" name="MESSAGE" placeholder=" Message*" required>
                           <input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-main rounded-pill px-3 px-3 mt-3">
-                           </div>
+                          
                         </form>
                         <div id="subscribe-result" class="mt-4 pt-2 mb-0" style="color:#27324d;">
-<!--                           Thank you!<br>You message has been sent. We will get back to you soon.-->
                         </div>
-<!--                        <p class="mt-4">Insert Form Here</p>-->
+                        </div>
+                        </div>
                      </div>
-                  </div>
-               </div>
                <!-- Footer Contact Form End -->
             </div>
             <div class="row mt-5 footer-credits">

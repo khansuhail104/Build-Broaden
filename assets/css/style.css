@@ -193,12 +193,12 @@ button:focus {
 }
 
 .about-video:before {
-	background: rgb(255 244 235 / 35%);
+	background: #FAFCFF;
 	transform: rotate(-2deg);
 }
 
 .about-video:after {
-	background: #fff4eb;
+	background: #F4F9FF;
 	transform: rotate(2deg);
 }
 
