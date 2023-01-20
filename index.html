@@ -487,11 +487,11 @@
                         }
                      </style>
                      <div class="fs-main">
-                        <form class="formcontainer" id="subscribe-form" action="https://buildandbroaden.us11.list-manage.com/subscribe/post-json?u=14ad9477588563587fd3933e5&amp;id=b910287aac&amp;f_id=005195e0f0" method="get">
-                           <input type="text" id="mce-FNAME" name="FNAME" placeholder="First Name*" required>
-                          <input type="text" id="mce-LNAME" name="LNAME" placeholder="Last Name*" required>
-                          <input class="formcolumn" type="email" id="mce-EMAIL" name="EMAIL" placeholder="Email*" required>
-                          <input type="text" id="mce-MESSAGE" name="MESSAGE" placeholder="Message*" required>
+                        <form class="formcontainer" id="contact" action="https://formsubmit.co/contact@buildandbroaden.com" method="POST" onsubmit="Thank You!">
+                           <input type="text" id="mce-FNAME" name="FirstName" placeholder="First Name*" required>
+                          <input type="text" id="mce-LNAME" name="LastName" placeholder="Last Name*" required>
+                          <input class="formcolumn" type="email" id="Email" name="Email" placeholder="Email*" required>
+                          <input type="text" id="mce-MESSAGE" name="Message" placeholder="Message*" required>
                           <input  type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-main rounded-pill px-3 px-3 mt-3">               
                         </form>
                         <div id="subscribe-result" class="mt-4 pt-2 mb-0" style="color:#27324d;">
@@ -514,64 +514,5 @@
       <script src="assets/js/swiper-bundle.min.js"></script>
       <script src="assets/js/core.js"></script>
       <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-      <script type="text/javascript">
-      $(document).ready(function(){
-      ajaxMailChimpForm($("#subscribe-form"), $("#subscribe-result"));
-      function ajaxMailChimpForm($form, $resultElement){
-      $form.submit(function(e) {
-      e.preventDefault();
-      if (!isValidEmail($form)) {
-      var error =  "A valid email address must be provided.";
-      $resultElement.html(error);
-      $resultElement.css("color", "#27324d");
-      } else {
-      $resultElement.css("color", "#27324d");
-      $resultElement.html("Sending...");
-      submitSubscribeForm($form, $resultElement);
-      }
-      });
-      }
-      function isValidEmail($form) {
-      var email = $form.find("input[type='email']").val();
-      if (!email || !email.length) {
-      return false;
-      } else if (email.indexOf("@") == -1) {
-      return false;
-      }
-      return true;
-      }
-      function submitSubscribeForm($form, $resultElement) {
-      $.ajax({
-      type: "GET",
-      url: $form.attr("action"),
-      data: $form.serialize(),
-      cache: false,
-      dataType: "jsonp",
-      jsonp: "c",
-      contentType: "application/json; charset=utf-8",
-      error: function(error){
-      },
-      success: function(data){
-      if (data.result != "success") {
-      var message = data.msg || "Sorry. Unable to subscribe. Please try again later.";
-      $resultElement.css("color", "#27324d");
-      if (data.msg && data.msg.indexOf("already subscribed") >= 0) {
-      message = "You're already subscribed. Thank you.";
-      $resultElement.css("color", "#27324d");
-      }
-      $resultElement.html(message);
-      } else {
-      $form.hide();
-      // $resultElement.css("display","block");
-      $resultElement.show();
-      $resultElement.css("color", "#27324d");
-      $resultElement.html("Thank you!<br>You message has been sent. We will get back to you soon.");
-
-      }
-      }
-      });
-      }
-      });
-      </script>
    </body>
 </html>
