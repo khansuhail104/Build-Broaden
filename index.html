@@ -467,7 +467,7 @@
                <!-- Footer Column 1 End -->
                <!-- Footer Contact Form Start -->
                <div class="col-12 col-lg-6">
-                  <div class="content-text mt-5 mt-lg-0 ps-0 ps-lg-5">
+                  <div class="content-text mt-5 mt-lg-0 ps-0 ps-lg-5" id="contactformid">
                      <span class="pre-title small fw-bold text-uppercase">Contact Us</span>
                      <h2 class="section-title">Let's Grow Your Business Together</h2>
                      <style type="text/css">
@@ -492,7 +492,10 @@
                           <input type="text" id="mce-LNAME" name="LastName" placeholder="Last Name*" required>
                           <input class="formcolumn" type="email" id="Email" name="Email" placeholder="Email*" required>
                           <input type="text" id="mce-MESSAGE" name="Message" placeholder="Message*" required>
-                          <input  type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-main rounded-pill px-3 px-3 mt-3">               
+                          <input type="hidden" name="_captcha" value="false">
+                          <input type="hidden" name="_next" value="#contactformid">
+                          <input  type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-main rounded-pill px-3 px-3 mt-3">
+
                         </form>
                         <div id="subscribe-result" class="mt-4 pt-2 mb-0" style="color:#27324d;">
                         </div>
