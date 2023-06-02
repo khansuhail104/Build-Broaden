@@ -229,6 +229,62 @@ button:focus {
 
 
 /*-- Content Sections --*/
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  white-space: nowrap;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+td.highlight {
+  background-color: #ffe6e6;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #e6e6e6;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    display: block;
+  }
+
+  thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  th {
+    text-align: left;
+  }
+
+  td.highlight {
+    background-color: inherit;
+  }
+
+  tr:nth-child(even) {
+    background-color: inherit;
+  }
+
+  tr:hover {
+    background-color: inherit;
+  }
+}
 
 .img-cover:before,
 .img-cover:after {
