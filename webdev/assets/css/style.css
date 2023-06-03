@@ -441,6 +441,38 @@ tr:hover {
 	font-weight: 600;
 }
 
+.card {
+  transition: box-shadow 0.25s;
+}
+
+.card:hover {
+  -webkit-box-shadow: -4px 6px 70px -34px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -4px 6px 70px -34px rgba(0, 0, 0, 0.75);
+  box-shadow: -4px 6px 70px -34px rgba(0, 0, 0, 0.75);
+}
+
+.button {
+  background-color: white;
+  border: solid 1px;
+  border-color: grey;
+  color: grey;
+  padding-right: 8px;
+  padding-left: 8px;
+  text-align: center;
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  margin: 2px 2px;
+}
+
+.button5 {
+  border-radius: 50%;
+}
+
+.border-color {
+  border: solid 2px;
+  border-color: darkslateblue !important;
+}
 
 /*-- Testimonials Slider --*/
 
